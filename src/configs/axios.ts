@@ -11,7 +11,7 @@ import axios, { AxiosError } from "axios";
 //   (res) => res,
 //   (error: AxiosError) => {
 //     if (error.code === "ERR_NETWORK") {
-//       console.error("خطای داخلی رخ داده است.");
+//       console.error("network error");
 //       return;
 //     }
 
