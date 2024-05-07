@@ -12,13 +12,11 @@ function App() {
   const [count, setCount] = useState<number>(0);
 
   //hooks
-  const c = useFetch(
-    `https://animechan.xyz/api/random/`,
-    { count },
-    false,
-    "component2"
-  );
+  const c = useFetch(`https://animechan.xyz/api/random/`, { count }, false);
+  const cc = useFetch(`https://animechan.xyz/api/quotes`, { count }, false);
+
   console.debug("c: ", c);
+  console.debug("cc: ", cc);
 
   //renderer
   return (
