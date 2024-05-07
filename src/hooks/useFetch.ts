@@ -37,6 +37,7 @@ const useFetch = (
             console.debug("error: ", error);
             requestList[url][2] = false;
             setLoading(false);
+            window.dispatchEvent(event);
           });
       } else {
         if (!requestList[url][2]) setData(requestList[url][1]);
