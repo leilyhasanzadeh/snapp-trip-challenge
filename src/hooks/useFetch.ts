@@ -7,7 +7,7 @@ const event = new Event("fetch");
 const useFetch = (
   url: string,
   params: object,
-  force: false,
+  force: boolean,
   component: string
 ) => {
   const [data, setData] = useState<object | null>(null);

@@ -12,7 +12,7 @@ function App() {
   const [count, setCount] = useState<number>(0);
 
   //hooks
-  let c = useFetch(
+  const c = useFetch(
     `https://animechan.xyz/api/random/`,
     { count },
     false,
